@@ -19,6 +19,7 @@ export class Datasource extends DataSourceApi<InfinityQuery> {
   constructor(iSettings: InfinityInstanceSettings) {
     super(iSettings);
     this.instanceSettings = iSettings;
+    console.log('InCons', iSettings);
   }
   private overrideWithGlobalQuery(t: InfinityQuery): InfinityQuery {
     if (

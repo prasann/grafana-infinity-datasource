@@ -42,7 +42,7 @@ export class InfinityProvider {
       console.log('*****', instanceSettingsUrl);
       console.log('###', target.url);
       console.log('Value from src', [instanceSettingsUrl, 'tokenauth', target.url].join('/'));
-      requestObject.url = instanceSettingsUrl || 'http://localhost:3000';
+      requestObject.url = [instanceSettingsUrl, 'tokenauth', target.url].join('/');
     }
     if (target.url_options && target.url_options.method === 'POST') {
       requestObject.data = target.url_options.data || '';
