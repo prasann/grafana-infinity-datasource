@@ -38,7 +38,7 @@ export class InfinityProvider {
     }
     if (instanceSettings.jsonData.datasource_mode === DatasourceMode.TokenAuth) {
       const instanceSettingsUrl = instanceSettings.url;
-      requestObject.url = [instanceSettingsUrl, 'tokenauth', target.url].join('/');
+      requestObject.url = [instanceSettingsUrl, target.url].join('/');
     }
     if (target.url_options && target.url_options.method === 'POST') {
       requestObject.data = target.url_options.data || '';
