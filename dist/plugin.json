@@ -5,6 +5,7 @@
   "type": "datasource",
   "metrics": true,
   "annotations": false,
+  "logs": true,
   "info": {
     "version": "0.7.0-alpha1",
     "updated": "2021-03-03",
